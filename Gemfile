@@ -27,3 +27,5 @@ group :development, :test do
   gem 'letter_opener'
   gem 'test-unit', '~> 3.0'
 end
+
+gem 'rails_12factor', group: :production
