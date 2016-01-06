@@ -1,14 +1,5 @@
-# == Schema Information
-#
-# Table name: users
-#
-#  id            :integer          not null, primary key
-#  email         :string(255)
-#  referral_code :string(255)
-#  referrer_id   :integer
-#  created_at    :datetime         not null
-#  updated_at    :datetime         not null
-#
-
 module UsersHelper
+  def referral_url(user)
+    "http://#{Rails.application.config.action_mailer.default_url_options[:host]}/?ref=#{user.referral_code}"
+  end
 end
