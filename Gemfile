@@ -4,6 +4,7 @@ gem 'rails', '3.2.22'
 gem 'pg'
 gem 'activeadmin', '0.6.6'
 gem 'haml-rails'
+gem 'puma'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -16,12 +17,13 @@ end
 group :development do
   gem 'quiet_assets'
   gem 'better_errors'
+  gem 'localtunnel'
 end
 
 group :development, :test do
-  gem 'puma'
   gem 'spring'
   gem 'annotate'
   gem 'pry-rails'
   gem 'letter_opener'
+  gem 'test-unit', '~> 3.0'
 end
