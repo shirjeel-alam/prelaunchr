@@ -70,9 +70,11 @@ class UsersController < ApplicationController
   end
 
   def webhook
-    data = JSON.parse params['data.json']
-    email = data['email'].first
-    ip_address = data['ip_address'].first
+    # data = JSON.parse params['data.json']
+    # email = data['email'].first
+    # ip_address = data['ip_address'].first
+    email = params[:your_best_email_address]
+    ip_address = request.env['HTTP_X_FORWARDED_FOR']
 
     @user = User.find_by_email(email)
     if @user.blank?
@@ -110,11 +112,12 @@ class UsersController < ApplicationController
     def store_ip(ip)
       cur_ip = IpAddress.find_by_address(ip) 
       cur_ip = IpAddress.create(address: ip, count: 0) if !cur_ip
-      if cur_ip.count > 2
-        return redirect_to root_path
-      else
-        cur_ip.update_attribute(:count, cur_ip.count + 1)
-      end
+      # if cur_ip.count > 2
+      #   return redirect_to root_path
+      # else
+      #   cur_ip.update_attribute(:count, cur_ip.count + 1)
+      # end
+      cur_ip.update_attribute(:count, cur_ip.count + 1)
     end
 
 end
