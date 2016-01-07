@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.22'
-gem 'pg'
+gem 'mysql2', '0.3.20'
 gem 'activeadmin', '0.6.6'
 gem 'haml-rails'
 gem 'puma'
