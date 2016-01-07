@@ -7,6 +7,8 @@ gem 'activeadmin', '0.6.6'
 gem 'haml-rails'
 gem 'puma'
 
+gem 'test-unit', '~> 3.0'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -26,7 +28,6 @@ group :development, :test do
   gem 'annotate'
   gem 'pry-rails'
   gem 'letter_opener'
-  gem 'test-unit', '~> 3.0'
 end
 
 gem 'rails_12factor', group: :production
