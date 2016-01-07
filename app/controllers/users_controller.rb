@@ -70,9 +70,6 @@ class UsersController < ApplicationController
   end
 
   def webhook
-    # data = JSON.parse params['data.json']
-    # email = data['email'].first
-    # ip_address = data['ip_address'].first
     email = params[:your_best_email_address]
     ip_address = request.env['HTTP_X_FORWARDED_FOR']
 
@@ -89,9 +86,9 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.present?
         cookies[:h_email] = { value: @user.email }
-        format.html { redirect_to '/refer-a-friend', status: :ok }
+        format.html { redirect_to '/refer-a-friend' }
       else
-        format.html { redirect_to root_path, alert: "Something went wrong!", status: :ok }
+        format.html { redirect_to root_path, alert: "Something went wrong!" }
       end
     end
   end
