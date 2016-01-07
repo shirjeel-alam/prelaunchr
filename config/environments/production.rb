@@ -20,7 +20,7 @@ Prelaunchr::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
-  config.assets.precompile += %w( core.css bootstrap.css reset.css active_admin.css active_admim.js )
+  config.assets.precompile += %w( core.css bootstrap.css reset.css active_admin.css.scss active_admin.css active_admim.js )
 
   config.action_mailer.default_url_options = { :host => 'arcane-caverns-4170.herokuapp.com' }
 
