@@ -1,7 +1,19 @@
+<meta property="og:title" content="The Rock"/>
+<meta property="og:type" content="movie"/>
+<meta property="og:url" content="http://www.imdb.com/title/tt0117500/"/>
+<meta property="og:image" content="http://ia.media-imdb.com/rock.jpg"/>
+<meta property="og:site_name" content="IMDb"/>
+<meta property="fb:admins" content="USER_ID"/>
+<meta property="og:description"
+      content="A group of U.S. Marines, under command of
+               a renegade general, take over Alcatraz and
+               threaten San Francisco Bay with biological
+               weapons."/>
+
 <div class="header">
     <div class="content">
-        <p class="logo brandon">Harry&#8217;s</p>
-        <p class="byline brandon">THANK YOU FOR SIGNING UP</p>
+        <p class="brand brandon">How You Bean?</p>
+        <p class="byline brandon">&nbsp;&nbsp;THANK YOU FOR SIGNING UP</p>
     </div>
 </div>
 
@@ -12,10 +24,10 @@
         </div>
         <div class="share-wrap">
             <p class="why brandon">Don't leave your friends behind</p>
-            <p class="title brandon">INVITE FRIENDS &<br>Earn Product</p>
-            <p class="subtitle brandon">Share your unique link via email, Facebook<br>or Twitter and earn Harry's goods for<br>each friend who signs up.</p>
+            <p class="title brandon">INVITE FRIENDS &<br>Earn Free Product</p>
+            <p class="subtitle brandon">Share your unique link by email, Facebook, Instagram or Twitter and earn free ‘How You Bean’ products for every friend that signs up.</p>
             <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
-            <% twitter_message = "#Shaving is evolving. Excited for @harrys to launch." %>
+            <% twitter_message = "Can’t wait for @howyoubean? to launch! The #coffee game is changing forever…" %>
             <div class="social-links">
                 <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" class="fb" target="_blank"></a>
                 <div class="sep"></div>
@@ -45,7 +57,7 @@
     <div class="page-content">
         <p class="callout brandon">Here's How It Works:</p>
         <ul class="products clearfix">
-            <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">Harry's Product</p></li>
+            <li class="title brandon"><p class="friends">Friends Joined</p><p class="rewards">How You Bean? Free Product</p></li>
             <% stops.each do |stop| %>
                 <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
                     <div class="circle"><%= stop["count"] %></div>
@@ -82,7 +94,7 @@
         <% end %>
         <p class="check brandon">Keep checking</p>
 
-        <p class="ship brandon">We ship to the U.S. (& Canada Soon)</p>        
+        <p class="ship brandon">Shipping is to Australia Only</p>        
         <a class="policy brandon" href="/privacy-policy" target="_blank">Privacy Policy</a>
     </div>
 </div>

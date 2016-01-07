@@ -1,0 +1,31 @@
+#refer .header {
+  background: #99cc99;
+}
+#refer .header .content {
+  width: 470px;
+}
+#refer .header .brand {
+  font-size: 24px;
+  font-weight: 900;
+}
+#refer .share-wrap .title {
+  color: #99cc99;
+}
+#refer .prizes .callout {
+  color: #99cc99;
+}
+#refer .prizes .products li.title {
+  color: #99cc99;
+}
+#refer .prizes .products li.product {
+  color: #99cc99;
+}
+#refer .prizes p.place {
+  color: #99cc99;
+}
+#refer .prizes p.place {
+  margin-top: 90px;
+}
+.brandon{
+  font-family: 'Montserrat', sans-serif;
+}
