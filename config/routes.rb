@@ -14,8 +14,8 @@ Prelaunchr::Application.routes.draw do
 
   post 'webhook', to: 'users#webhook'
 
-  unless Rails.application.config.consider_all_requests_local
-    match '*not_found', to: 'users#redirect', :format => false
-  end
+  # unless Rails.application.config.consider_all_requests_local
+  #   match '*not_found', to: 'users#redirect', :format => false
+  # end
   
 end

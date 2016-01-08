@@ -65,9 +65,9 @@ class UsersController < ApplicationController
         
   end  
 
-  def redirect
-    redirect_to root_path, :status => 404
-  end
+  # def redirect
+  #   redirect_to root_path, :status => 404
+  # end
 
   def webhook
     email = params[:your_best_email_address]
