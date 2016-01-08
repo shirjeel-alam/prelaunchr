@@ -26,12 +26,12 @@
             <p class="why brandon">Don't leave your friends behind</p>
             <p class="title brandon">INVITE FRIENDS &<br>Earn Free Product</p>
             <p class="subtitle brandon">Share your unique link by email, Facebook, Instagram or Twitter and earn free ‘How You Bean’ products for every friend that signs up.</p>
-            <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
+            <div class="copy-link brandon"><%= referral_url(@user) %></div>
             <% twitter_message = "Can’t wait for @howyoubean? to launch! The #coffee game is changing forever…" %>
             <div class="social-links">
-                <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=Harrys" class="fb" target="_blank"></a>
+                <a href="http://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(referral_url(@user)) %>&title=Harrys" class="fb" target="_blank"></a>
                 <div class="sep"></div>
-                <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
+                <a href="http://twitter.com/share?url=<%= CGI::escape(referral_url(@user)) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
             </div>
         </div>
     </div>

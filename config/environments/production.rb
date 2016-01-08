@@ -22,7 +22,7 @@ Prelaunchr::Application.configure do
 
   config.assets.precompile += %w( core.css bootstrap.css reset.css active_admin.css.scss active_admin.css active_admim.js )
 
-  config.action_mailer.default_url_options = { :host => 'arcane-caverns-4170.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'exclusiveaccess.howyoubean.org' }
 
   ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
