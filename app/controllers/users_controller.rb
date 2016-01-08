@@ -3,14 +3,16 @@ class UsersController < ApplicationController
   skip_before_filter  :verify_authenticity_token, only: :webhook
 
   def new
-    @bodyId = 'home'
-    @is_mobile = mobile_device?
+    # @bodyId = 'home'
+    # @is_mobile = mobile_device?
 
-    @user = User.new
+    # @user = User.new
 
-    respond_to do |format|
-      format.html # new.html.erb
-    end
+    # respond_to do |format|
+    #   format.html # new.html.erb
+    # end
+
+    redirect_to 'http://prelaunch.howyoubean.org/green-coffee-bean/'
   end
 
   def create
@@ -65,9 +67,9 @@ class UsersController < ApplicationController
         
   end  
 
-  # def redirect
-  #   redirect_to root_path, :status => 404
-  # end
+  def redirect
+    redirect_to root_path, status: 404
+  end
 
   def webhook
     email = params[:your_best_email_address]
