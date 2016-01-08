@@ -27,25 +27,25 @@ class User < ActiveRecord::Base
         'count' => 5,
         "html" => "1x Free Bag",
         "class" => "two",
-        "image" =>  ActionController::Base.helpers.asset_path("refer/cream-tooltip@2x.png")
+        "image" =>  ActionController::Base.helpers.asset_path("refer/HUB-1XFree.png")
       },
       {
         'count' => 10,
         "html" => "2x Free Bags + Definitive Guide To Healthy Living E-Book",
         "class" => "three",
-        "image" => ActionController::Base.helpers.asset_path("refer/truman@2x.png")
+        "image" => ActionController::Base.helpers.asset_path("refer/HUB-2xFree+e-book.png")
       },
       {
         'count' => 25,
         "html" => "3x Free bags + How You Bean Glass Drink Bottle",
         "class" => "four",
-        "image" => ActionController::Base.helpers.asset_path("refer/winston@2x.png")
+        "image" => ActionController::Base.helpers.asset_path("refer/HUB-3XFree+Bottle.png")
       },
       {
         'count' => 50,
         "html" => "Free 1 year supply + special edition How You Bean Coffee Plunger",
         "class" => "five",
-        "image" => ActionController::Base.helpers.asset_path("refer/blade-explain@2x.png")
+        "image" => ActionController::Base.helpers.asset_path("refer/HUB-50-Referral.png")
       }
     ]
 

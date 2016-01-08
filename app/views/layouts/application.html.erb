@@ -6,13 +6,19 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="<%= @bodyId %>"> <!--<![endif]-->
 <head>
   <title>How You Bean?</title>
-  <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
-  <link rel="shortcut icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
+  <link rel="shortcut icon" href="<%= asset_path('favicon.ico?v=2') %>">
 
   <meta property="og:title" content="How You Bean?"/>
+  <meta property="og:type" content="product"/>
   <meta property="og:description" content="Changing The World One Bean At A Time."/>
-  <meta property="og:image" content="<%= asset_path("refer/truman.png") %>"/>
-  <meta property="og:url" content="<%= root_url %>"/>
+  <meta property="og:image" content="<%= asset_path("refer/HUB-1XFree.png") %>"/>
+  <meta property="og:site_name" content="How You Bean?"/>
+  <% if @user.present? %>
+    <meta property="og:url" content="<%= referral_url(@user) %>"/>
+  <% else %>
+    <meta property="og:url" content="http://prelaunch.howyoubean.org/green-coffee-bean"/>
+  <% end %>
+
   <% if @is_mobile %>
       <% if @bodyId == 'home' %>
           <meta name="viewport" content="width=1600" />
@@ -20,7 +26,9 @@
           <meta name="viewport" content="width=1120" />
       <% end %>
   <% end %>
+
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
   <%= stylesheet_link_tag "core.css", :media => "all" %>
   <%= csrf_meta_tags %>
 </head>

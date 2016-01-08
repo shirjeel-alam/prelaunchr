@@ -32,3 +32,17 @@
 .brandon{
   font-family: 'Montserrat', sans-serif;
 }
+#refer .prizes .products li.product .tooltip {
+  border: 4px solid #99cc99;
+}
+#refer .prizes .products li.product .tooltip img {
+  height: 254px;
+  width: 190px;
+}
+#refer .prizes .products li.product:hover .circle{
+  background: #99cc99;
+  border-color: #99cc99;
+}
+#refer .share-wrap .social-links {
+  width: auto;
+}
