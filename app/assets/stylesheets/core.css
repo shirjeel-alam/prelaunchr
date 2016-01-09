@@ -412,6 +412,13 @@ html.home{
   height: 27px;
 }
 
+#refer .share-wrap .social-links .pinterest{
+  background: url(/assets/refer/pinterest.png);
+  background-size: 27px 27px;
+  width: 27px;
+  height: 27px;
+}
+
 #refer .share-wrap .social-links .sep{
 	height: 28px;
 	width: 1px;

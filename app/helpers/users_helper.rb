@@ -6,4 +6,8 @@ module UsersHelper
       "http://#{Rails.application.config.action_mailer.default_url_options[:host]}/?ref=#{user.referral_code}"
     end
   end
+
+  def asset_url(asset)
+    "#{request.protocol}#{request.host_with_port}#{asset_path(asset)}"
+  end
 end

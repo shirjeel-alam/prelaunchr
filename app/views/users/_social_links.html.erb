@@ -1,11 +1,14 @@
 <% message = "Can’t wait for @howyoubean? to launch! The #coffee game is changing forever…" %>
 <% url = CGI::escape(referral_url(@user)) %>
+<% image = 'http://thespiritscience.net/wp-content/uploads/2015/11/Coffee-Cup-Bowl-With-Grains-Images.jpg' %>
 <div class="social-links">
   <a href="http://www.facebook.com/sharer/sharer.php?u=<%= url %>&title=How To Bean" class="fb" target="_blank"></a>
   <div class="sep"></div>
   <a href="http://twitter.com/share?url=<%= url %>&text=<%= CGI::escape(message) %>" class="twit" target="_blank"></a>
   <div class="sep"></div>
-  <a href="mailto:?subject=<%= message %>&amp;body=<%= message %> - <%= url %>" class="email" target="_blank"></a></a>
+  <a href="mailto:?subject=<%= message %>&amp;body=<%= message %> - <%= url %>" class="email" target="_blank"></a>
   <div class="sep"></div>
-  <a href="https://vine.co/v/ih6VappFItj" class="vine" target="_blank"></a></a>
+  <a href="https://vine.co/v/ih6VappFItj" class="vine" target="_blank"></a>
+  <div class="sep"></div>
+  <a href="https://pinterest.com/pin/create/button/?url=<%= url %>&description=<%= CGI::escape(message) %> <%= url %>&media=<%= asset_url('refer/HUB-1XFree.png') %>" class="pinterest" target="_blank"></a>
 </div>
