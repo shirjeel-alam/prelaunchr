@@ -4,172 +4,180 @@
 - url = CGI::escape(referral_url(@user))
 - image = 'http://exclusiveaccess.howyoubean.org/assets/refer/HUB-Main-Final.png'
 
-%body
-  %center
-    %table#bodyTable{:align => "center", :border => "0", :cellpadding => "0", :cellspacing => "0", :height => "100%", :width => "100%"}
-      %tr
-        %td#bodyCell{:align => "center", :valign => "top"}
-          / BEGIN TEMPLATE //
-          /[if gte mso 9]
-            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
-            <tr>
-            <td align="center" valign="top" width="600" style="width:600px;">
-          %table.templateContainer{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
-            %tr
-              %td#templateHeader{:valign => "top"}
-                %table.mcnImageBlock{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width:100%;", :width => "100%"}
-                  %tbody.mcnImageBlockOuter
-                    %tr
-                      %td.mcnImageBlockInner{:style => "padding:9px", :valign => "top"}
-                        %table.mcnImageContentContainer{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width:100%;", :width => "100%"}
-                          %tbody
-                            %tr
-                              %td.mcnImageContent{:style => "padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;", :valign => "top"}
-                                %img.mcnImage{:align => "center", :alt => "", :src => "https://gallery.mailchimp.com/0ce112aac50055dc4f7675f20/images/97a4fed7-6ca0-4454-abfc-ddc3959ec9f2.png", :style => "max-width:350px; padding-bottom: 0; display: inline !important; vertical-align: bottom;", :width => "350"}
-            %tr
-              %td#templateBody{:valign => "top"}
-                %table.mcnTextBlock{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width:100%;", :width => "100%"}
-                  %tbody.mcnTextBlockOuter
-                    %tr
-                      %td.mcnTextBlockInner{:valign => "top"}
-                        %table.mcnTextContentContainer{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width:100%;", :width => "100%"}
-                          %tbody
-                            %tr
-                              %td.mcnTextContent{:style => "padding-top:9px; padding-right: 18px; padding-bottom: 9px; padding-left: 18px;", :valign => "top"}
-                                %h1{:style => "text-align: center;"} The Coffee Game Is Changing...
-                                %p{:style => "text-align: center;"}
-                                  %br
-                                    Congratulations. You're now an exclusive new
-                                    %em How You Bean?
-                                    member.
-                                %p &nbsp;
-                                %p{:style => "text-align: center;"} Start referring friends now to earn FREE product. It's easy and takes less than 10 seconds. All you have to do is share your unique link below.
-                                %p{:style => "text-align: center;"}= link_to referral_url(@user), referral_url(@user), target: '_blank'
-                                %p{:style => "text-align: center;"}
-                                  %strong Sharing Is Caring
-                %table.mcnShareBlock{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width:100%;", :width => "100%"}
-                  %tbody.mcnShareBlockOuter
-                    %tr
-                      %td.mcnShareBlockInner{:style => "padding:9px", :valign => "top"}
-                        %table.mcnShareContentContainer{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width:100%;", :width => "100%"}
-                          %tbody
-                            %tr
-                              %td{:align => "center", :style => "padding-top:0; padding-left:9px; padding-bottom:0; padding-right:9px;"}
-                                %table.mcnShareContent{:align => "center", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width: 100%;background-color: #4D4C4B;", :width => "100%"}
-                                  %tbody
-                                    %tr
-                                      %td.mcnShareContentItemContainer{:align => "center", :style => "padding-top:9px; padding-right:9px; padding-left:9px;", :valign => "top"}
-                                        %table{:align => "center", :border => "0", :cellpadding => "0", :cellspacing => "0"}
-                                          %tbody
-                                            %tr
-                                              %td{:align => "left", :valign => "top"}
-                                                /[if mso]
-                                                  <table align="center" border="0" cellspacing="0" cellpadding="0">
-                                                  <tr>
-                                                /[if mso]
-                                                  <td align="center" valign="top">
-                                                %table{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0"}
-                                                  %tbody
-                                                    %tr
-                                                      %td.mcnShareContentItemContainer{:style => "padding-right:9px; padding-bottom:9px;", :valign => "top"}
-                                                        %table.mcnShareContentItem{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: separate;border-radius: 3px;background-color: #FFBE31;", :width => ""}
-                                                          %tbody
-                                                            %tr
-                                                              %td{:align => "left", :style => "padding-top:5px; padding-right:9px; padding-bottom:5px; padding-left:9px;", :valign => "middle"}
-                                                                %table{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0", :width => ""}
-                                                                  %tbody
-                                                                    %tr
-                                                                      %td.mcnShareIconContent{:align => "center", :valign => "middle", :width => "24"}
-                                                                        %a{:href => "http://www.facebook.com/sharer/sharer.php?u=#{url}&title=How To Bean", :target => "_blank"}
-                                                                          %img{:height => "24", :src => "http://cdn-images.mailchimp.com/icons/social-block-v2/outline-dark-facebook-48.png", :style => "display:block;", :width => "24"}/
-                                                                      %td.mcnShareTextContent{:align => "left", :style => "padding-left:5px;", :valign => "middle"}
-                                                                        %a{:href => "http://www.facebook.com/sharer/sharer.php?u=#{url}&title=How To Bean", :style => "color: #202020;font-family: Arial;font-size: 12px;font-weight: normal;line-height: normal;text-align: center;text-decoration: none;", :target => ""} Share
-                                                /[if mso]
-                                                  </td>
-                                                /[if mso]
-                                                  <td align="center" valign="top">
-                                                %table{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0"}
-                                                  %tbody
-                                                    %tr
-                                                      %td.mcnShareContentItemContainer{:style => "padding-right:9px; padding-bottom:9px;", :valign => "top"}
-                                                        %table.mcnShareContentItem{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: separate;border-radius: 3px;background-color: #FFBE31;", :width => ""}
-                                                          %tbody
-                                                            %tr
-                                                              %td{:align => "left", :style => "padding-top:5px; padding-right:9px; padding-bottom:5px; padding-left:9px;", :valign => "middle"}
-                                                                %table{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0", :width => ""}
-                                                                  %tbody
-                                                                    %tr
-                                                                      %td.mcnShareIconContent{:align => "center", :valign => "middle", :width => "24"}
-                                                                        %a{:href => "http://twitter.com/share?url=#{url}&text=#{CGI::escape(message)}", :target => "_blank"}
-                                                                          %img{:height => "24", :src => "http://cdn-images.mailchimp.com/icons/social-block-v2/outline-dark-twitter-48.png", :style => "display:block;", :width => "24"}/
-                                                                      %td.mcnShareTextContent{:align => "left", :style => "padding-left:5px;", :valign => "middle"}
-                                                                        %a{:href => "http://twitter.com/share?url=#{url}&text=#{CGI::escape(message)}", :style => "color: #202020;font-family: Arial;font-size: 12px;font-weight: normal;line-height: normal;text-align: center;text-decoration: none;", :target => ""} Tweet
-                                                /[if mso]
-                                                  </td>
-                                                /[if mso]
-                                                  <td align="center" valign="top">
-                                                %table{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0"}
-                                                  %tbody
-                                                    %tr
-                                                      %td.mcnShareContentItemContainer{:style => "padding-right:9px; padding-bottom:9px;", :valign => "top"}
-                                                        %table.mcnShareContentItem{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: separate;border-radius: 3px;background-color: #FFBE31;", :width => ""}
-                                                          %tbody
-                                                            %tr
-                                                              %td{:align => "left", :style => "padding-top:5px; padding-right:9px; padding-bottom:5px; padding-left:9px;", :valign => "middle"}
-                                                                %table{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0", :width => ""}
-                                                                  %tbody
-                                                                    %tr
-                                                                      %td.mcnShareIconContent{:align => "center", :valign => "middle", :width => "24"}
-                                                                        %a{:href => "mailto:?subject=#{message}&body=#{message} - #{url}", :target => "_blank"}
-                                                                          %img{:height => "24", :src => "http://cdn-images.mailchimp.com/icons/social-block-v2/outline-dark-forwardtofriend-48.png", :style => "display:block;", :width => "24"}/
-                                                                      %td.mcnShareTextContent{:align => "left", :style => "padding-left:5px;", :valign => "middle"}
-                                                                        %a{:href => "mailto:?subject=#{message}&body=#{message} - #{url}", :style => "color: #202020;font-family: Arial;font-size: 12px;font-weight: normal;line-height: normal;text-align: center;text-decoration: none;", :target => ""} Forward
-                                                /[if mso]
-                                                  </td>
-                                                /[if mso]
-                                                  <td align="center" valign="top">
-                                                %table{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0"}
-                                                  %tbody
-                                                    %tr
-                                                      %td.mcnShareContentItemContainer{:style => "padding-right:0; padding-bottom:9px;", :valign => "top"}
-                                                        %table.mcnShareContentItem{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: separate;border-radius: 3px;background-color: #FFBE31;", :width => ""}
-                                                          %tbody
-                                                            %tr
-                                                              %td{:align => "left", :style => "padding-top:5px; padding-right:9px; padding-bottom:5px; padding-left:9px;", :valign => "middle"}
-                                                                %table{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0", :width => ""}
-                                                                  %tbody
-                                                                    %tr
-                                                                      %td.mcnShareIconContent{:align => "center", :valign => "middle", :width => "24"}
-                                                                        %a{:href => "https://pinterest.com/pin/create/button/?url=#{url}&description=#{CGI::escape(message)} #{url}&media=#{image}", :target => "_blank"}
-                                                                          %img{:height => "24", :src => "http://cdn-images.mailchimp.com/icons/social-block-v2/outline-dark-pinterest-48.png", :style => "display:block;", :width => "24"}/
-                                                                      %td.mcnShareTextContent{:align => "left", :style => "padding-left:5px;", :valign => "middle"}
-                                                                        %a{:href => "https://pinterest.com/pin/create/button/?url=#{url}&description=#{CGI::escape(message)} #{url}&media=#{image}", :style => "color: #202020;font-family: Arial;font-size: 12px;font-weight: normal;line-height: normal;text-align: center;text-decoration: none;", :target => ""} Pin
-                                                /[if mso]
-                                                  </td>
-                                                /[if mso]
-                                                  </tr>
-                                                  </table>
-                %table.mcnTextBlock{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width:100%;", :width => "100%"}
-                  %tbody.mcnTextBlockOuter
-                    %tr
-                      %td.mcnTextBlockInner{:valign => "top"}
-                        %table.mcnTextContentContainer{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width:100%;", :width => "100%"}
-                          %tbody
-                            %tr
-                              %td.mcnTextContent{:style => "padding-top:9px; padding-right: 18px; padding-bottom: 9px; padding-left: 18px;", :valign => "top"}
-                                %div{:style => "text-align: center;"}
-                                  How You Bean? is a unique green and roasted arabica instant coffee blend with 90% more antioxidants than regular coffee.
-                                  %br
+!!!
+%html
+  %head
+    %meta{:content => "How You Bean?", :property => "og:title"}/
+    %meta{:content => "product", :property => "og:type"}/
+    %meta{:content => "Changing The World One Bean At A Time.", :property => "og:description"}/
+    %meta{:content => image, :property => "og:image"}/
+    %meta{:content => "How You Bean?", :property => "og:site_name"}/
+  %body
+    %center
+      %table#bodyTable{:align => "center", :border => "0", :cellpadding => "0", :cellspacing => "0", :height => "100%", :width => "100%"}
+        %tr
+          %td#bodyCell{:align => "center", :valign => "top"}
+            / BEGIN TEMPLATE //
+            /[if gte mso 9]
+              <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+              <tr>
+              <td align="center" valign="top" width="600" style="width:600px;">
+            %table.templateContainer{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
+              %tr
+                %td#templateHeader{:valign => "top"}
+                  %table.mcnImageBlock{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width:100%;", :width => "100%"}
+                    %tbody.mcnImageBlockOuter
+                      %tr
+                        %td.mcnImageBlockInner{:style => "padding:9px", :valign => "top"}
+                          %table.mcnImageContentContainer{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width:100%;", :width => "100%"}
+                            %tbody
+                              %tr
+                                %td.mcnImageContent{:style => "padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;", :valign => "top"}
+                                  %img.mcnImage{:align => "center", :alt => "", :src => "https://gallery.mailchimp.com/0ce112aac50055dc4f7675f20/images/97a4fed7-6ca0-4454-abfc-ddc3959ec9f2.png", :style => "max-width:350px; padding-bottom: 0; display: inline !important; vertical-align: bottom;", :width => "350"}
+              %tr
+                %td#templateBody{:valign => "top"}
+                  %table.mcnTextBlock{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width:100%;", :width => "100%"}
+                    %tbody.mcnTextBlockOuter
+                      %tr
+                        %td.mcnTextBlockInner{:valign => "top"}
+                          %table.mcnTextContentContainer{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width:100%;", :width => "100%"}
+                            %tbody
+                              %tr
+                                %td.mcnTextContent{:style => "padding-top:9px; padding-right: 18px; padding-bottom: 9px; padding-left: 18px;", :valign => "top"}
+                                  %h1{:style => "text-align: center;"} The Coffee Game Is Changing...
+                                  %p{:style => "text-align: center;"}
                                     %br
-                                      Antioxidants turbo charge your health and wellbeing because they destroy these nasty things called free radicals which cause disease and premature aging...
+                                      Congratulations. You're now an exclusive new
+                                      %em How You Bean?
+                                      member.
+                                  %p &nbsp;
+                                  %p{:style => "text-align: center;"} Start referring friends now to earn FREE product. It's easy and takes less than 10 seconds. All you have to do is share your unique link below.
+                                  %p{:style => "text-align: center;"}= link_to referral_url(@user), referral_url(@user), target: '_blank'
+                                  %p{:style => "text-align: center;"}
+                                    %strong Sharing Is Caring
+                  %table.mcnShareBlock{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width:100%;", :width => "100%"}
+                    %tbody.mcnShareBlockOuter
+                      %tr
+                        %td.mcnShareBlockInner{:style => "padding:9px", :valign => "top"}
+                          %table.mcnShareContentContainer{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width:100%;", :width => "100%"}
+                            %tbody
+                              %tr
+                                %td{:align => "center", :style => "padding-top:0; padding-left:9px; padding-bottom:0; padding-right:9px;"}
+                                  %table.mcnShareContent{:align => "center", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width: 100%;background-color: #4D4C4B;", :width => "100%"}
+                                    %tbody
+                                      %tr
+                                        %td.mcnShareContentItemContainer{:align => "center", :style => "padding-top:9px; padding-right:9px; padding-left:9px;", :valign => "top"}
+                                          %table{:align => "center", :border => "0", :cellpadding => "0", :cellspacing => "0"}
+                                            %tbody
+                                              %tr
+                                                %td{:align => "left", :valign => "top"}
+                                                  /[if mso]
+                                                    <table align="center" border="0" cellspacing="0" cellpadding="0">
+                                                    <tr>
+                                                  /[if mso]
+                                                    <td align="center" valign="top">
+                                                  %table{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0"}
+                                                    %tbody
+                                                      %tr
+                                                        %td.mcnShareContentItemContainer{:style => "padding-right:9px; padding-bottom:9px;", :valign => "top"}
+                                                          %table.mcnShareContentItem{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: separate;border-radius: 3px;background-color: #FFBE31;", :width => ""}
+                                                            %tbody
+                                                              %tr
+                                                                %td{:align => "left", :style => "padding-top:5px; padding-right:9px; padding-bottom:5px; padding-left:9px;", :valign => "middle"}
+                                                                  %table{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0", :width => ""}
+                                                                    %tbody
+                                                                      %tr
+                                                                        %td.mcnShareIconContent{:align => "center", :valign => "middle", :width => "24"}
+                                                                          %a{:href => "http://www.facebook.com/sharer/sharer.php?u=#{url}&title=How To Bean", :target => "_blank"}
+                                                                            %img{:height => "24", :src => "http://cdn-images.mailchimp.com/icons/social-block-v2/outline-dark-facebook-48.png", :style => "display:block;", :width => "24"}/
+                                                                        %td.mcnShareTextContent{:align => "left", :style => "padding-left:5px;", :valign => "middle"}
+                                                                          %a{:href => "http://www.facebook.com/sharer/sharer.php?u=#{url}&title=How To Bean", :style => "color: #202020;font-family: Arial;font-size: 12px;font-weight: normal;line-height: normal;text-align: center;text-decoration: none;", :target => ""} Share
+                                                  /[if mso]
+                                                    </td>
+                                                  /[if mso]
+                                                    <td align="center" valign="top">
+                                                  %table{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0"}
+                                                    %tbody
+                                                      %tr
+                                                        %td.mcnShareContentItemContainer{:style => "padding-right:9px; padding-bottom:9px;", :valign => "top"}
+                                                          %table.mcnShareContentItem{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: separate;border-radius: 3px;background-color: #FFBE31;", :width => ""}
+                                                            %tbody
+                                                              %tr
+                                                                %td{:align => "left", :style => "padding-top:5px; padding-right:9px; padding-bottom:5px; padding-left:9px;", :valign => "middle"}
+                                                                  %table{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0", :width => ""}
+                                                                    %tbody
+                                                                      %tr
+                                                                        %td.mcnShareIconContent{:align => "center", :valign => "middle", :width => "24"}
+                                                                          %a{:href => "http://twitter.com/share?url=#{url}&text=#{CGI::escape(message)}", :target => "_blank"}
+                                                                            %img{:height => "24", :src => "http://cdn-images.mailchimp.com/icons/social-block-v2/outline-dark-twitter-48.png", :style => "display:block;", :width => "24"}/
+                                                                        %td.mcnShareTextContent{:align => "left", :style => "padding-left:5px;", :valign => "middle"}
+                                                                          %a{:href => "http://twitter.com/share?url=#{url}&text=#{CGI::escape(message)}", :style => "color: #202020;font-family: Arial;font-size: 12px;font-weight: normal;line-height: normal;text-align: center;text-decoration: none;", :target => ""} Tweet
+                                                  /[if mso]
+                                                    </td>
+                                                  /[if mso]
+                                                    <td align="center" valign="top">
+                                                  %table{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0"}
+                                                    %tbody
+                                                      %tr
+                                                        %td.mcnShareContentItemContainer{:style => "padding-right:9px; padding-bottom:9px;", :valign => "top"}
+                                                          %table.mcnShareContentItem{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: separate;border-radius: 3px;background-color: #FFBE31;", :width => ""}
+                                                            %tbody
+                                                              %tr
+                                                                %td{:align => "left", :style => "padding-top:5px; padding-right:9px; padding-bottom:5px; padding-left:9px;", :valign => "middle"}
+                                                                  %table{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0", :width => ""}
+                                                                    %tbody
+                                                                      %tr
+                                                                        %td.mcnShareIconContent{:align => "center", :valign => "middle", :width => "24"}
+                                                                          %a{:href => "mailto:?subject=#{message}&body=#{message} - #{url}", :target => "_blank"}
+                                                                            %img{:height => "24", :src => "http://cdn-images.mailchimp.com/icons/social-block-v2/outline-dark-forwardtofriend-48.png", :style => "display:block;", :width => "24"}/
+                                                                        %td.mcnShareTextContent{:align => "left", :style => "padding-left:5px;", :valign => "middle"}
+                                                                          %a{:href => "mailto:?subject=#{message}&body=#{message} - #{url}", :style => "color: #202020;font-family: Arial;font-size: 12px;font-weight: normal;line-height: normal;text-align: center;text-decoration: none;", :target => ""} Forward
+                                                  /[if mso]
+                                                    </td>
+                                                  /[if mso]
+                                                    <td align="center" valign="top">
+                                                  %table{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0"}
+                                                    %tbody
+                                                      %tr
+                                                        %td.mcnShareContentItemContainer{:style => "padding-right:0; padding-bottom:9px;", :valign => "top"}
+                                                          %table.mcnShareContentItem{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "border-collapse: separate;border-radius: 3px;background-color: #FFBE31;", :width => ""}
+                                                            %tbody
+                                                              %tr
+                                                                %td{:align => "left", :style => "padding-top:5px; padding-right:9px; padding-bottom:5px; padding-left:9px;", :valign => "middle"}
+                                                                  %table{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0", :width => ""}
+                                                                    %tbody
+                                                                      %tr
+                                                                        %td.mcnShareIconContent{:align => "center", :valign => "middle", :width => "24"}
+                                                                          %a{:href => "https://pinterest.com/pin/create/button/?url=#{url}&description=#{CGI::escape(message)} #{url}&media=#{image}", :target => "_blank"}
+                                                                            %img{:height => "24", :src => "http://cdn-images.mailchimp.com/icons/social-block-v2/outline-dark-pinterest-48.png", :style => "display:block;", :width => "24"}/
+                                                                        %td.mcnShareTextContent{:align => "left", :style => "padding-left:5px;", :valign => "middle"}
+                                                                          %a{:href => "https://pinterest.com/pin/create/button/?url=#{url}&description=#{CGI::escape(message)} #{url}&media=#{image}", :style => "color: #202020;font-family: Arial;font-size: 12px;font-weight: normal;line-height: normal;text-align: center;text-decoration: none;", :target => ""} Pin
+                                                  /[if mso]
+                                                    </td>
+                                                  /[if mso]
+                                                    </tr>
+                                                    </table>
+                  %table.mcnTextBlock{:border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width:100%;", :width => "100%"}
+                    %tbody.mcnTextBlockOuter
+                      %tr
+                        %td.mcnTextBlockInner{:valign => "top"}
+                          %table.mcnTextContentContainer{:align => "left", :border => "0", :cellpadding => "0", :cellspacing => "0", :style => "min-width:100%;", :width => "100%"}
+                            %tbody
+                              %tr
+                                %td.mcnTextContent{:style => "padding-top:9px; padding-right: 18px; padding-bottom: 9px; padding-left: 18px;", :valign => "top"}
+                                  %div{:style => "text-align: center;"}
+                                    How You Bean? is a unique green and roasted arabica instant coffee blend with 90% more antioxidants than regular coffee.
+                                    %br
                                       %br
+                                        Antioxidants turbo charge your health and wellbeing because they destroy these nasty things called free radicals which cause disease and premature aging...
                                         %br
-                                          If you have any questions then please reply to this email. We would love to hear from you :)
                                           %br
+                                            If you have any questions then please reply to this email. We would love to hear from you :)
                                             %br
-                                              Kind Regards
                                               %br
+                                                Kind Regards
                                                 %br
-                                                  The
-                                                  %em How You Bean?
-                                                  Team
+                                                  %br
+                                                    The
+                                                    %em How You Bean?
+                                                    Team

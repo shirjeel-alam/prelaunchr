@@ -1,7 +1,7 @@
 class UserMailer < ActionMailer::Base
   helper :users
 
-  default from: "hello@howyoubean.org"
+  default from: "How You Bean? <hello@howyoubean.org>"
 
   def signup_email(user)
     @user = user
