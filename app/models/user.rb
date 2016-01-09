@@ -49,6 +49,10 @@ class User < ActiveRecord::Base
       }
     ]
 
+    def num_referred
+      referrals.count
+    end
+
     private
 
     def create_referral_code
