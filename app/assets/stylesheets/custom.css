@@ -47,7 +47,7 @@
   width: auto;
 }
 #refer .mammoth {
-  background: url(/assets/refer/HUB-Main-Image.png) 0 0 no-repeat;
+  background: url(/assets/refer/HUB-Main-Final.png) 0 0 no-repeat;
 }
 
 @media only screen and (min--moz-device-pixel-ratio: 2),
@@ -55,6 +55,6 @@ only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
   #refer .mammoth {
-    background: url(/assets/refer/HUB-Main-Image.png) 0 0 no-repeat;
+    background: url(/assets/refer/HUB-Main-Final.png) 0 0 no-repeat;
   }
 }
