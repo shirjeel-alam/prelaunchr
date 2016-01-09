@@ -53,10 +53,9 @@ class UsersController < ApplicationController
     @is_mobile = mobile_device?
 
     @user = User.find_by_email(email)
-    @user ||= User.first
 
     respond_to do |format|
-      if !@user.nil?
+      if @user.present?
         format.html #refer.html.erb
       else
         format.html { redirect_to root_path, :alert => "Something went wrong!" }

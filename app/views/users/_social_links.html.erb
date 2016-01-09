@@ -1,6 +1,6 @@
 <% message = "Can’t wait for @howyoubean? to launch! The #coffee game is changing forever…" %>
 <% url = CGI::escape(referral_url(@user)) %>
-<% image = 'http://thespiritscience.net/wp-content/uploads/2015/11/Coffee-Cup-Bowl-With-Grains-Images.jpg' %>
+<% image = asset_url('refer/HUB-Main-Image.png') %>
 <div class="social-links">
   <a href="http://www.facebook.com/sharer/sharer.php?u=<%= url %>&title=How To Bean" class="fb" target="_blank"></a>
   <div class="sep"></div>
@@ -10,5 +10,5 @@
   <div class="sep"></div>
   <a href="https://vine.co/v/ih6VappFItj" class="vine" target="_blank"></a>
   <div class="sep"></div>
-  <a href="https://pinterest.com/pin/create/button/?url=<%= url %>&description=<%= CGI::escape(message) %> <%= url %>&media=<%= asset_url('refer/HUB-1XFree.png') %>" class="pinterest" target="_blank"></a>
+  <a href="https://pinterest.com/pin/create/button/?url=<%= url %>&description=<%= CGI::escape(message) %> <%= url %>&media=<%= image %>" class="pinterest" target="_blank"></a>
 </div>
