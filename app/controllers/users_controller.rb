@@ -53,6 +53,7 @@ class UsersController < ApplicationController
     @is_mobile = mobile_device?
 
     @user = User.find_by_email(email)
+    @user ||= User.first if Rails.env.development?
 
     respond_to do |format|
       if @user.present?
